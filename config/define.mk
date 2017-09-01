@@ -45,9 +45,9 @@ MAKE =			gmake
 CPPCMD =		g++
 
 ifeq ($(BUILD),DEBUG)
-CPPFLAGS =		-g -Wall -Werror
+CPPFLAGS =		-g -Wall -std=c++11
 else
-CPPFLAGS =		-g -Wall -Werror -O3
+CPPFLAGS =		-g -Wall -std=c++11 -O3
 endif
 
 ifeq ($(SYSNAME), SunOS)
